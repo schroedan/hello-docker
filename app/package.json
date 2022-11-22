@@ -1,0 +1,26 @@
+{
+  "name": "hello-docker-app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prettify": "prettier -l --write \"**/*.js\"",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-graceful-shutdown": "^3.1.11"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "prettier": "^1.18.2"
+  },
+  "packageManager": "yarn@3.3.0"
+}
