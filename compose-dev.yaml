@@ -10,5 +10,10 @@ services:
     volumes:
       - ./app:/app
     working_dir: /app
+  dev:
+    build:
+      context: app
+      target: dev
+    stdin_open: true
   redis:
     image: redis:6-alpine

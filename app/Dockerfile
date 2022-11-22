@@ -1,6 +1,12 @@
 # syntax=docker/dockerfile:1
 
-FROM node:18-alpine
+FROM node:18-alpine as node
+
+FROM node as dev
+
+RUN apk add --no-cache git
+
+FROM node
 
 WORKDIR /app
 
