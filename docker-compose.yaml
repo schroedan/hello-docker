@@ -10,3 +10,5 @@ services:
     volumes:
       - ./app:/app
     working_dir: /app
+  redis:
+    image: redis:6-alpine
